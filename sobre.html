@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - TransLog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #059669;
+            --secondary: #10b981;
+            --accent: #10b981;
+            --foreground: #475569;
+            --muted: #f1f5f9;
+        }
+        .font-heading { font-family: 'Space Grotesk', sans-serif; }
+        .font-body { font-family: 'DM Sans', sans-serif; }
+        .bg-primary { background-color: var(--primary); }
+        .bg-secondary { background-color: var(--secondary); }
+        .text-primary { color: var(--primary); }
+        .border-primary { border-color: var(--primary); }
+        .hover\:bg-primary:hover { background-color: var(--primary); }
+    </style>
+</head>
+<body class="font-body bg-white text-slate-600">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="font-heading text-2xl font-bold text-primary">TransLog</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-slate-600 hover:text-primary transition-colors">Início</a>
+                        <a href="sobre.html" class="text-primary font-medium">Sobre</a>
+                        <a href="servicos.html" class="text-slate-600 hover:text-primary transition-colors">Serviços</a>
+                        <a href="contato.html" class="text-slate-600 hover:text-primary transition-colors">Contato</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="index.html" class="block px-3 py-2 text-slate-600 hover:text-primary">Início</a>
+                <a href="sobre.html" class="block px-3 py-2 text-primary font-medium">Sobre</a>
+                <a href="servicos.html" class="block px-3 py-2 text-slate-600 hover:text-primary">Serviços</a>
+                <a href="contato.html" class="block px-3 py-2 text-slate-600 hover:text-primary">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Sobre a TransLog</h1>
+            <p class="text-xl max-w-3xl mx-auto">Conheça nossa história, valores e a equipe que faz a diferença no transporte brasileiro</p>
+        </div>
+    </section>
+
+    <!-- Company History -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-heading text-3xl font-bold text-slate-800 mb-6">Nossa História</h2>
+                    <p class="text-lg text-slate-600 mb-4">
+                        Fundada em 2009, a TransLog nasceu com o objetivo de revolucionar o setor de transporte e logística no Brasil. 
+                        Começamos como uma pequena empresa familiar e hoje somos referência nacional em soluções logísticas.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-6">
+                        Ao longo dos anos, investimos continuamente em tecnologia, pessoas e processos para oferecer o melhor 
+                        serviço aos nossos clientes. Nossa jornada é marcada pela inovação e pelo compromisso com a excelência.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">2009</div>
+                            <div class="text-sm text-slate-500">Fundação</div>
+                        </div>
+                        <div class="w-8 h-px bg-slate-300"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">2015</div>
+                            <div class="text-sm text-slate-500">Expansão Nacional</div>
+                        </div>
+                        <div class="w-8 h-px bg-slate-300"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">2024</div>
+                            <div class="text-sm text-slate-500">Líder do Setor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-8">
+                    <img src="/placeholder.svg?height=400&width=500" alt="Centro de distribuição TransLog" class="w-full rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-800 mb-4">
+                    Nossos Valores
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-2">Missão</h3>
+                    <p class="text-slate-600">Conectar o Brasil através de soluções logísticas eficientes, seguras e sustentáveis, superando as expectativas dos nossos clientes.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-2">Visão</h3>
+                    <p class="text-slate-600">Ser a transportadora mais confiável e inovadora do Brasil, reconhecida pela excelência em serviços e responsabilidade social.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-2">Valores</h3>
+                    <p class="text-slate-600">Integridade, inovação, sustentabilidade, respeito às pessoas e compromisso com a qualidade em tudo que fazemos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-800 mb-4">
+                    Nossa Equipe
+                </h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Profissionais experientes e dedicados que fazem a diferença todos os dias
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="/placeholder.svg?height=128&width=128" alt="Carlos Silva" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-1">Carlos Silva</h3>
+                    <p class="text-primary font-medium mb-2">CEO & Fundador</p>
+                    <p class="text-slate-600 text-sm">Mais de 20 anos de experiência em logística e transporte. Visionário por trás do crescimento da TransLog.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="/placeholder.svg?height=128&width=128" alt="Ana Costa" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-1">Ana Costa</h3>
+                    <p class="text-primary font-medium mb-2">Diretora de Operações</p>
+                    <p class="text-slate-600 text-sm">Especialista em otimização de processos logísticos. Responsável pela excelência operacional da empresa.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="/placeholder.svg?height=128&width=128" alt="Roberto Santos" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold mb-1">Roberto Santos</h3>
+                    <p class="text-primary font-medium mb-2">Diretor de Tecnologia</p>
+                    <p class="text-slate-600 text-sm">Lidera a inovação tecnológica da TransLog, implementando soluções que revolucionam o setor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-heading text-xl font-bold mb-4">TransLog</h3>
+                    <p class="text-slate-300">Conectando o Brasil com soluções logísticas inteligentes há mais de 15 anos.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="servicos.html" class="hover:text-white">Transporte Rodoviário</a></li>
+                        <li><a href="servicos.html" class="hover:text-white">Armazenagem</a></li>
+                        <li><a href="servicos.html" class="hover:text-white">Logística Integrada</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="sobre.html" class="hover:text-white">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="hover:text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <div class="space-y-2 text-slate-300">
+                        <p>📞 (11) 3456-7890</p>
+                        <p>✉️ contato@translog.com.br</p>
+                        <p>📍 São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-300">
+                <p>&copy; 2024 TransLog. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
